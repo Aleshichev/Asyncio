@@ -43,7 +43,7 @@ def handle(s):
 
     while True:
         try:
-            c.sendall(b"Hello")
+            s.sendall(b"Hello")
         except BrokenPipeError:
             break
         time.sleep(0.5)
